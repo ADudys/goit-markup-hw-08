@@ -5,46 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
-
     <!--czcionki-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@500;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <!--CSS-->
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
-
   <body>
-    <header>
-      <a href="https://www.webstudio.com"><span>Web</span>Studio</a>
-      <nav>Agencja Porfolio Kontakt</nav>
-      <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a href="tel:+48111111111"> +48 111 111 111</a>
+    <header class="page-header">
+      <a class="logo" href="https://adudys.github.io/goit-markup-hw-02/index.html"><span class="logo-web">Web</span>Studio</a>
+       <nav class="navigation"> 
+        <ul class="list">
+          <li><a class="nav-element" href="https://adudys.github.io/goit-markup-hw-02/index.html">Agencja</a></li>
+          <li><a class="nav-element" href="https://adudys.github.io/goit-markup-hw-02/portfolio.html">Porfolio</a></li>
+          <li><a class="nav-element">Kontakt</a></li>
+        </ul>
+      </nav>
+      <a class="contact mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      <a class="contact phone" href="tel:+48111111111"> +48 111 111 111</a>
     </header>
     <main>
-      <h1>
+      <div class="title-block">
+      <h1 class="title">
         EFEKTYWNE ROZWIĄZANIA <br />
         DLA WASZEGO BIZNESU
       </h1>
-      <button type="button">Zamów usługę</button>
-      <div>
-        <ul>
-          <li>
+      <button class="order button" type="button">Zamów usługę</button>
+      </div> 
+      <div class="pros-block">
+        <ul class="list">
+          <li class="list-item">
             <h3>LOREM IPSUM</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
+          <li class="list-item">
             <h3>LOREM IPSUM</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
+          <li class="list-item">
+            <h3>LOREM IPSUM</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcu sem. Sed non sodales dui. Interdum et malesuada
+            </p>
+          </li>
+          <li class="list-item">
             <h3>LOREM IPSUM</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -53,86 +65,81 @@
           </li>
         </ul>
       </div>
-      <div>
-        <h2>Czym się zajmujemy</h2>
-
-        <img
+      <div class="services-block">
+        <h2 class="header-secondary">Czym się zajmujemy</h2>
+<ul class="list">
+        <li class="services"><img
           src="images/image.jpg"
           alt="Zdjęcie rąk programisty piszącego kod."
           height="294"
           width="370"
-        />
-        <img
+        /></li>
+        <li class="services"><img
           src="images/image2.jpg"
           alt="Zdjęcie osoby wybierającej layout aplikacji na smartfonie."
           height="294"
           width="370"
-        />
-        <img
+        /></li>
+        <li class="services"><img
           src="images/image3.jpg"
           alt="Zdjęcie rąk osoby wybierającej kolor z palety barw wyświetlonej na tablecie"
           height="294"
           width="370"
-        />
+        /></li>
+</ul>
       </div>
-      <div>
-        <h2>Nasz zespół</h2>
-        <ul>
-          <li>
+      <div class="team-block">
+        <h2 class="header-secondary">Nasz zespół</h2>
+        <ul class="list team">
+          <li class="list-item team john-first">
             <img
               src="images/John_Doe1.jpg"
               alt="Zdjęcie Jhona Doe, Product Designera w Web Studio."
               width="271"
               height="260"
             />
-
             <h3>John Doe</h3>
-            <p>UI Designer</p>
+            <p class="job">Product Designer</p>
           </li>
-          <li>
+          <li class="list-item team">
             <img
               src="images/John_Doe2.jpg"
               alt="Zdjęcie Jhona Doe, Frontend Developera w Web Studio."
               width="271"
               height="260"
             />
-
             <h3>John Doe</h3>
-            <p>UI Designer</p>
+            <p class="job">Frontend Designer</p>
           </li>
-          <li>
+          <li class="list-item team">
             <img
               src="images/John_Doe3.jpg"
               alt="Zdjęcie Jhona Doe, Marketingowca w Web Studio."
               width="271"
               height="260"
             />
-
             <h3>John Doe</h3>
-            <p>UI Designer</p>
+            <p class="job">Marketing</p>
           </li>
-          <li>
+          <li class="list-item team">
             <img
               src="images/John_Doe4.jpg"
               alt="Zdjęcie Jhona Doe, UI Designera w Web Studio."
               width="271"
               height="260"
             />
-
             <h3>John Doe</h3>
-            <p>UI Designer</p>
+            <p class="job">UI Designer</p>
           </li>
         </ul>
       </div>
     </main>
-
-
   <footer>
-    <a><span>Web</span>Studio</a>
-    <address>
-      m. Warszawa, Aleje Jerozolimskie 21 <br />
-      <a href="mailto:info@devstudio.com">info@devstudio.com</a> <br />
-      <a href="tel:+48111111111"> +48 111 111 111</a>
+    <a class="logo down" href="https://adudys.github.io/goit-markup-hw-02/index.html"
+      ><span class="logo-web">Web</span>Studio</a>
+     <address class="address"> m. Warszawa, Aleje Jerozolimskie 21 <br />
+      <a class="footer-contact" href="mailto:info@devstudio.com">info@devstudio.com</a> <br />
+      <a class="footer-contact" href="tel:+48111111111"> +48 111 111 111</a>
     </address>
   </footer>
 </html>

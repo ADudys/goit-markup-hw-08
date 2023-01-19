@@ -1,0 +1,218 @@
+:root {
+  --base-color: rgba(33, 33, 33, 1);
+  --brand-color: rgba(33, 150, 243, 1);
+  --logo-color: rgba(0, 0, 0, 1);
+  --lighter-font: rgba(117, 117, 117, 1);
+  --navy-block: rgba(47, 48, 58, 1);
+  --white: rgba(255, 255, 255, 1);
+  --team-block: rgba(245, 244, 250, 1);
+  --shadow-color: rgba(0, 0, 0, 0.25);
+  --portfolio-border: rgba(238, 238, 238, 1);
+}
+body {
+  font-family: "Roboto";
+  color: var(--base-color);
+  margin: 0;
+}
+.page-header {
+  height: 80px;
+  width: 1600px;
+  display: inline-flex;
+  margin-bottom: 0;
+  align-items: baseline;
+}
+.logo {
+  font-family: "Raleway";
+  font-size: 26px;
+  line-height: 1.18;
+  text-decoration: none;
+  color: var(--logo-color);
+  margin-left: 215px;
+  padding-right: 94px;
+  padding-top: 24px;
+  width: 145px;
+  height: 31px;
+}
+.logo-web {
+  color: var(--brand-color);
+}
+.navigation {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.41px;
+}
+.nav-element {
+  padding-left: 46px;
+  margin-top: 0;
+  opacity: 0.71;
+  text-decoration: none;
+  color: var(--base-color);
+}
+.nav-element:focus,
+.nav-element:hover,
+.nav-element:hover,
+.contact:hover,
+.contact:focus,
+.footer-contact:hover,
+.footer-contact:focus {
+  color: var(--brand-color);
+}
+.contact {
+  text-decoration: none;
+  color: var(--lighter-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  vertical-align: top;
+}
+.mail {
+  margin-left: 371px;
+}
+.phone {
+  margin-left: 50px;
+}
+.title-block {
+  background: var(--navy-block);
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  margin-top: 0;
+  padding-bottom: 94px;
+}
+.title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  padding-top: 200px;
+  align-items: center;
+  margin-bottom: 30px;
+  color: var(--white);
+}
+.order {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 42px;
+  margin-left: 700px;
+  width: 200px;
+  height: 50px;
+  box-shadow: var(--shadow-color);
+  background: var(--brand-color);
+  color: var(--white);
+  border-color: var(--brand-color);
+}
+.button {
+  cursor: pointer;
+  border-radius: 4px;
+}
+.pros-block {
+  margin-left: 215px;
+  justify-content: center;
+}
+.list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+.list-item {
+  width: 270px;
+  height: 101px;
+  margin-right: 30px;
+}
+.job {
+  color: var(--lighter-font);
+}
+.services-block {
+  margin-left: 215px;
+  padding-top: 90px;
+  justify-content: center;
+  width: 1170px;
+  height: 386px;
+  display: flex;
+  flex-direction: column;
+}
+.services {
+  margin-right: 30px;
+}
+.team-block {
+  background-color: var(--team-block);
+  height: 648px;
+  width: 1600px;
+  margin-top: 94px;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.header-secondary {
+  text-align: center;
+
+  margin-bottom: 50px;
+  margin-top: 94px;
+}
+.team {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.17;
+  margin-bottom: 94px;
+  margin-top: 0;
+}
+footer {
+  background-color: var(--navy-block);
+  width: 1600px;
+  height: 252px;
+  display: flex;
+  flex-direction: column;
+}
+.down {
+  margin-top: 60px;
+  padding-right: 0;
+}
+.address {
+  padding-top: 20px;
+  font-weight: 400;
+  font-size: 1.71;
+  line-height: 24px;
+  color: var(--white);
+  margin-left: 215px;
+}
+.footer-contact {
+  color: var(--white);
+  text-decoration: none;
+}
+.john-first {
+  margin-left: 215px;
+}
+.nav-portfolio {
+  display: flex;
+  justify-content: center;
+  padding-right: 8px;
+  margin-top: 94px;
+}
+.portfolio-button {
+  height: 38px;
+  background: var(--team-block);
+  margin: 8px;
+  border-color: var(--team-block);
+  box-shadow: (0, 4px, 4px) var(--shadow-color);
+}
+.portfolio-button:focus,
+.portfolio-button:hover {
+  background-color: var(--brand-color);
+  color: var(--white);
+}
+.portfolio {
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+.portfolio-item {
+  border: 1px solid var(--portfolio-border);
+  height: 404px;
+  width: 370px;
+  margin: 30px;
+}
