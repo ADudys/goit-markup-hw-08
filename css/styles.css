@@ -9,6 +9,7 @@
   --shadow-color: rgba(0, 0, 0, 0.25);
   --portfolio-border: rgba(238, 238, 238, 1);
   --address: rgba(255, 255, 255, 0.6);
+  --line-color: rgba(236, 236, 236, 1);
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -21,6 +22,7 @@ body {
   display: inline-flex;
   margin-bottom: 0;
   align-items: baseline;
+  border-bottom: 1px solid var(--line-color);
 }
 .logo {
   font-family: "Raleway";
@@ -174,7 +176,7 @@ footer {
 }
 .address {
   padding-top: 20px;
-  font-size: 14;
+  font-size: 14px;
   line-height: 1.71;
   color: var(--white);
   margin-left: 215px;
@@ -210,7 +212,6 @@ footer {
 }
 .portfolio {
   flex-wrap: wrap;
-
   justify-content: center;
 }
 .portfolio-item {
