@@ -10,19 +10,33 @@
   --portfolio-border: rgba(238, 238, 238, 1);
   --address: rgba(255, 255, 255, 0.6);
   --line-color: rgba(236, 236, 236, 1);
+  --shadow-color1: rgba(0, 0, 0, 0.12);
+  --shadow-color2: rgba(0, 0, 0, 0.14);
+  --shadow-color3: rgba(0, 0, 0, 0.2);
 }
 body {
   font-family: "Roboto", sans-serif;
   color: var(--base-color);
   margin: 0px;
 }
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .page-header {
-  height: 80px;
-  width: 1600px;
   display: inline-flex;
   margin-bottom: 0px;
   align-items: baseline;
   border-bottom: 1px solid var(--line-color);
+  padding-top: 24px;
+  padding-bottom: 32px;
+  width: 1600px;
 }
 .logo {
   font-family: "Raleway";
@@ -30,11 +44,7 @@ body {
   line-height: 1.18;
   text-decoration: none;
   color: var(--logo-color);
-  margin-left: 215px;
-  padding-right: 94px;
-  padding-top: 24px;
-  width: 145px;
-  height: 31px;
+  margin-right: 93px;
 }
 .logo-web {
   color: var(--brand-color);
@@ -45,8 +55,7 @@ body {
   line-height: 1.17;
 }
 .nav-element {
-  padding-left: 46px;
-  margin-top: 0px;
+  margin-right: 46px;
   text-decoration: none;
   color: var(--base-color);
 }
@@ -65,28 +74,23 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  vertical-align: top;
 }
 .mail {
-  margin-left: 371px;
-}
-.phone {
-  margin-left: 50px;
+  margin-left: 325px;
+  margin-right: 50px;
 }
 .title-block {
   background: var(--navy-block);
   width: 1600px;
-  height: 600px;
-  margin-top: 0px;
-  padding-bottom: 94px;
+  justify-content: center;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
-.title {
+h1 {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
-  padding-top: 200px;
-  align-items: center;
   margin-bottom: 30px;
   color: var(--white);
 }
@@ -94,13 +98,9 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding-left: 42px;
-  margin-left: 700px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 200px;
-  height: 50px;
   box-shadow: var(--shadow-color);
   background: var(--brand-color);
   color: var(--white);
@@ -111,28 +111,29 @@ body {
   border-radius: 4px;
 }
 .pros-block {
-  margin-left: 215px;
+  font-size: 14px;
+  line-height: 1.71;
   justify-content: center;
 }
-.list {
+ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
+  padding-inline-start: 0;
+  margin: 0;
 }
 .list-item {
-  width: 270px;
-  height: 101px;
   margin-right: 30px;
 }
-.specification {
+.list-item:last-child {
+  margin-right: 0px;
+}
+p {
   color: var(--lighter-font);
 }
 .services-block {
-  margin-left: 215px;
-  padding-top: 90px;
   justify-content: center;
   width: 1170px;
-  height: 386px;
   display: flex;
   flex-direction: column;
 }
@@ -141,32 +142,31 @@ body {
 }
 .team-block {
   background-color: var(--team-block);
-  height: 648px;
   width: 1600px;
-  margin-top: 94px;
-  align-content: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
-.header-secondary {
+h2 {
   text-align: center;
-
   margin-bottom: 50px;
-  margin-top: 94px;
 }
 .team {
   text-align: center;
   font-size: 16px;
   line-height: 1.17;
-  margin-bottom: 94px;
-  margin-top: 0px;
+  justify-content: center;
+  box-shadow: 0px 1px 3px var(--shadow-color1), 0px 1px 1px var(--shadow-color2),
+    0px 2px 1px var(--shadow-color3);
+  border-radius: 0px 0px 4px 4px;
 }
 footer {
   background-color: var(--navy-block);
   width: 1600px;
-  height: 252px;
   display: flex;
   flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .down {
   margin-top: 60px;
@@ -178,23 +178,17 @@ footer {
   font-size: 14px;
   line-height: 1.71;
   color: var(--white);
-  margin-left: 215px;
 }
 .footer-contact {
   color: var(--address);
   text-decoration: none;
 }
-.john-first {
-  margin-left: 215px;
-}
 .nav-portfolio {
   display: flex;
   justify-content: center;
   padding-right: 8px;
-  margin-top: 94px;
 }
 .portfolio-button {
-  height: 38px;
   background: var(--team-block);
   border-width: 0;
   margin: 8px;
@@ -215,12 +209,20 @@ footer {
 }
 .portfolio-item {
   border: 1px solid var(--portfolio-border);
-  height: 404px;
   width: 370px;
   margin: 30px;
+  justify-content: center;
+}
+.client-name {
+  font-size: 18px;
+  line-height: 2;
+  margin-top: 20px;
+  margin-left: 24px;
+  margin-bottom: 4px;
 }
 .description {
-  color: var(--lighter-font);
   font-size: 16px;
   line-height: 1.87;
+  margin: 0;
+  margin-left: 24px;
 }
