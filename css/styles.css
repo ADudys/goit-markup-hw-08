@@ -84,8 +84,8 @@ header {
   background: var(--navy-block);
   background-image: url(/images/background.jpg);
   background-size: 1600px;
-  background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-repeat: no-repeat;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -217,13 +217,23 @@ footer {
   padding: 25px 100px;
 }
 .social-links {
-  padding: 16px 32px 18px 32px;
   gap: 10px;
+  justify-content: center;
+  display: flex;
+  padding: 20px 0 0 0;
 }
+.icon-list {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 .contact-team {
-  fill: var(--icon-color);
   border-radius: 50%;
-  border-width: 0px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
 }
 
 .contact-team:hover,
