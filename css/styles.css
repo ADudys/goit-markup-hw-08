@@ -13,6 +13,7 @@
   --shadow-color1: rgba(0, 0, 0, 0.12);
   --shadow-color2: rgba(0, 0, 0, 0.14);
   --shadow-color3: rgba(0, 0, 0, 0.2);
+  --icon-color: rgba(175, 177, 184, 1);
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -81,6 +82,10 @@ header {
 }
 .title-block {
   background: var(--navy-block);
+  background-image: url(/images/background.jpg);
+  background-size: 1600px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -146,10 +151,12 @@ h2 {
 }
 footer {
   background-color: var(--navy-block);
-  display: flex;
-  flex-direction: column;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
 }
 .down {
   margin-top: 60px;
@@ -204,4 +211,38 @@ footer {
   line-height: 1.87;
   margin: 0 0 0 24px;
   padding-bottom: 20px;
+}
+.rect {
+  background-color: var(--team-block);
+  padding: 25px 100px;
+}
+.social-links {
+  padding: 16px 32px 18px 32px;
+  gap: 10px;
+}
+.contact-team {
+  fill: var(--icon-color);
+  border-radius: 50%;
+  border-width: 0px;
+}
+
+.contact-team:hover,
+.contact-team:hover > :first-child {
+  fill: var(--white);
+  background-color: var(--brand-color);
+  cursor: pointer;
+}
+.icon {
+  fill: var(--icon-color);
+}
+
+.client {
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.client:hover,
+.client:hover > :first-child {
+  fill: var(--brand-color);
+  border-color: var(--brand-color);
 }
