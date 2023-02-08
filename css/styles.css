@@ -36,12 +36,11 @@ body {
 }
 header {
   border-bottom: 1px solid var(--line-color);
-  padding-top: 24px;
-  padding-bottom: 32px;
+height: 80px;
 }
 .page-header {
   display: inline-flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
 }
 .logo {
@@ -152,6 +151,7 @@ h2 {
   margin-bottom: 50px;
 }
 .team {
+  background-color: var(--white);
   text-align: center;
   font-size: 16px;
   line-height: 1.17;
@@ -278,10 +278,15 @@ footer {
   fill: var(--icon-color);
 }
 
-.client {
+.client{
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
+  width: 170px;
 }
 .client:hover,
 .client:hover > :first-child,
@@ -307,6 +312,7 @@ footer {
   border-radius: 50%;
   background-color: var(--footer-icon);
   fill: var(--white);
+  cursor: pointer;
 }
 
 .footer-icon:hover,
