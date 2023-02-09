@@ -408,6 +408,7 @@ footer {
   border: 1px solid var(--portfolio-box-shadow5);
   border-radius: 50%;
   cursor: pointer;
+  background-color: var(--white);
 }
 .is-hidden {
   opacity: 0;
