@@ -65,7 +65,7 @@ header {
 .nav-list {
   gap: 46px;
 }
-.nav-element {
+.nav-element,.nav-element-active {
   text-decoration: none;
   color: var(--base-color);
 }
@@ -78,17 +78,17 @@ header {
   color: var(--brand-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-element::after {
+.nav-element-active::after {
   content: "";
+  position: absolute;
   margin-top: 28px;
-  width: 100%;
+  margin-left: -51px;
+  width: 53px;
   height: 4px;
-  background: transparent;
+  background: var(--brand-color);
   border-radius: 2px;
 }
-.nav-element:active::after {
-  background-color: var(--brand-color);
-}
+
 .contact {
   text-decoration: none;
   color: var(--lighter-font);
