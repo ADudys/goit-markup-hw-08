@@ -114,7 +114,7 @@ header {
       var(--base-color) 0%,
       var(--overlay-color) 40%
     ),
-    url(/images/background.jpg);
+    url(/goit-markup-hw-05/images/background.jpg);
   background-size: 1600px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
