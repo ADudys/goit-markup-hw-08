@@ -87,7 +87,7 @@ header {
 .nav-element-active::after {
   content: "";
   position: absolute;
-  top: 28px;
+  top: 46px;
   left: 0;
   width: 100%;
   height: 4px;
@@ -114,7 +114,7 @@ header {
       var(--base-color) 0%,
       var(--overlay-color) 40%
     ),
-    url(https://github.com/ADudys/goit-markup-hw-05/blob/main/images/background.jpg);
+    url(/images/background.jpg);
   background-size: 1600px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -137,7 +137,7 @@ h1 {
   box-shadow: var(--shadow-color);
   background: var(--brand-color);
   color: var(--white);
-  border-color: none--------------;
+  border: none;
 }
 .button {
   cursor: pointer;
@@ -332,13 +332,13 @@ footer {
   height: 92px;
   width: 170px;
 }
-.client:hover > :first-child,
-.client:focus > :first-child,
+.client:hover :first-child,
+.client:focus :first-child,
 .client:hover,
 .client:focus {
   fill: var(--brand-color);
   border-color: var(--brand-color);
-  transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social {
