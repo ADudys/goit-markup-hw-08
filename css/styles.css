@@ -65,25 +65,31 @@ header {
 .nav-list {
   gap: 46px;
 }
-.nav-element,.nav-element-active {
+.nav-element,
+.nav-element-active {
   text-decoration: none;
   color: var(--base-color);
+}
+.nav-element-active {
+  position: relative;
 }
 .nav-element:focus,
 .nav-element:hover,
 .contact:hover,
 .contact:focus,
 .footer-contact:hover,
-.footer-contact:focus {
+.footer-contact:focus,
+.nav-element-active:hover,
+.nav-element-active:focus {
   color: var(--brand-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-element-active::after {
   content: "";
   position: absolute;
-  margin-top: 28px;
-  margin-left: -51px;
-  width: 53px;
+  top: 28px;
+  left: 0;
+  width: 100%;
   height: 4px;
   background: var(--brand-color);
   border-radius: 2px;
@@ -108,7 +114,7 @@ header {
       var(--base-color) 0%,
       var(--overlay-color) 40%
     ),
-    url(/goit-markup-hw-04/images/background.jpg);
+    url(/images/background.jpg);
   background-size: 1600px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -131,7 +137,7 @@ h1 {
   box-shadow: var(--shadow-color);
   background: var(--brand-color);
   color: var(--white);
-  border-color: var(--brand-color);
+  border-color: none--------------;
 }
 .button {
   cursor: pointer;
@@ -326,13 +332,13 @@ footer {
   height: 92px;
   width: 170px;
 }
-.client:hover,
 .client:hover > :first-child,
-.client:focus,
-.client:focus > :first-child {
+.client:focus > :first-child,
+.client:hover,
+.client:focus {
   fill: var(--brand-color);
   border-color: var(--brand-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social {
@@ -398,17 +404,24 @@ footer {
   width: 528px;
   height: 581px;
   background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
-  width: 30px;
-  height: 30px;
   border: 1px solid var(--portfolio-box-shadow5);
   border-radius: 50%;
   cursor: pointer;
   background-color: var(--white);
+  fill: var(--logo-color);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .is-hidden {
   opacity: 0;
