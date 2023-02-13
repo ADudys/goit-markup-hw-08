@@ -306,6 +306,7 @@ footer {
   height: 44px;
   border-radius: 50%;
   fill: var(--icon-color);
+  cursor: pointer;
 }
 
 .icon-list:hover,
@@ -314,13 +315,11 @@ footer {
 .icon-list:focus > ::after {
   fill: var(--white);
   background-color: var(--brand-color);
-  cursor: pointer;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon {
   fill: var(--icon-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client {
@@ -332,16 +331,15 @@ footer {
   align-items: center;
   height: 92px;
   width: 170px;
-  transition-property: border-color;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--icon-color);
 }
-
-.client:hover .icon,
+.client:hover > ::after,
 .client:hover,
-.client:focus .icon,
+.client:focus > ::after,
 .client:focus {
   fill: var(--brand-color);
   border-color: var(--brand-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social {
