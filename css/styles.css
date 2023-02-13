@@ -337,7 +337,9 @@ footer {
 }
 
 .client:hover .icon,
-.client:hover {
+.client:hover,
+.client:focus .icon,
+.client:focus {
   fill: var(--brand-color);
   border-color: var(--brand-color);
 }
