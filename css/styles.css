@@ -541,7 +541,7 @@ footer {
 .checkbox::before {
   display: flex;
   content: "";
-  background-image: url(/images/icons.svg#icon-Vector-3);
+  background-image: url(./images/icons.svg#icon-Vector-3);
   width: 16px;
   height: 15px;
   cursor: pointer;
@@ -549,7 +549,7 @@ footer {
 }
 .checkbox:checked::before {
   content: "";
-  background-image: url(/images/icons.svg#icon-icon-check);
+  background-image: url(./images/icons.svg#icon-icon-check);
   width: 16px;
   height: 15px;
 }
