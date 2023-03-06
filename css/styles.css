@@ -526,7 +526,7 @@ footer {
   padding: 10px 76px;
   cursor: pointer;
   display: flex;
-  margin-left: 164px;
+  margin: 0 auto;
 }
 .name {
   margin: 0;
@@ -554,9 +554,10 @@ footer {
   height: 15px;
 }
 .policy {
-  display: inline-flex;
-  align-items: baseline;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: baseline;
   font-size: 14px;
   gap: 8px;
   text-align: center;
