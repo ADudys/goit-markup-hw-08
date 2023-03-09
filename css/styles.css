@@ -538,32 +538,33 @@ footer {
 }
 
 .checkbox {
+  display: flex;
   visibility: hidden;
-  display: flex;
 }
-.checkbox::before {
-  display: flex;
-  content: "";
-  background-image: url(./images/icons.svg#icon-Vector-3);
-  width: 16px;
-  height: 15px;
-  cursor: pointer;
+
+.check-white {
+  visibility: hidden;
+  transform: translateX(-100%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:checked ~ .check-white {
   visibility: visible;
-}
-.checkbox:checked::before {
-  content: "";
-  background-image: url(./images/icons.svg#icon-icon-check);
-  width: 16px;
-  height: 15px;
+  background-color: var(--brand-color);
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  visibility: visible;
 }
 .policy {
   display: flex;
+  position: relative;
   flex-direction: row;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   font-size: 14px;
-  gap: 8px;
   text-align: center;
+  margin: 5px 0;
 }
 .policy-doc {
   color: var(--brand-color);
