@@ -1,0 +1,43 @@
+.team {
+    background-color: $team-block;
+  }
+
+.team_item {
+    background-color: $white;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.17;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 1px 3px $shadow-color1, 0px 1px 1px $shadow-color2,
+      0px 2px 1px $shadow-color3;
+    border-radius: 0px 0px 4px 4px;
+  }
+  .social-links {
+    gap: 10px;
+    justify-content: center;
+    display: flex;
+    margin: 16px 0 18px 0;
+  }
+  .social-links_icon-list {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: $icon-color;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      fill: $white;
+      background-color: $brand-color;
+      transition: $transition-effect;
+      &::after {
+        fill: $white;
+        background-color: $brand-color;
+        transition: $transition-effect;
+      }
+    }
+  }

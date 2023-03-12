@@ -1,0 +1,179 @@
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $brand-color;
+    color: $white;
+    transform: translateY(200%);
+    transition: transform 250ms ease;
+    font-size: 18px;
+    line-height: 1.55;
+    padding: 49px 45px 49px 24px;
+    .portfolio-item:hover & {
+      transform: translateY(0);
+      transition: $transition-effect;
+    }
+  }
+.backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $shadow-color3;
+  }
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    opacity: 1;
+    width: 528px;
+    height: 581px;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    display: flex;
+  }
+  .modal_close-btn {
+    margin: 8px 8px 0 auto;
+    top: 8px;
+    right: 8px;
+    border: 1px solid $portfolio-box-shadow5;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: $white;
+    fill: $logo-color;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .signup-form {
+    margin-top: 12px;
+    position: absolute;
+    display: block;
+  }
+  .form-box {
+    color: $lighter-font;
+    font-size: 12px;
+    line-height: 1.17;
+    width: 448px;
+    height: 40px;
+    padding-left: 42px;
+    margin-top: 4px;
+    margin-bottom: 0;
+    border-radius: 4px;
+    border: 1px solid $border-box;
+    position: relative;
+    display: block;
+    cursor: text;
+    transition-property: border;
+    transition: $transition-effect;
+  }
+  
+  .form-icon {
+    fill: $base-color;
+    transform: translateY(-160%);
+    margin-left: 12px;
+    transition-property: fill;
+    transition: $transition-effect;
+  }
+  .form-box:focus,
+  .form-box:focus + .form-icon,
+  .comment:focus {
+    outline: none;
+    border-color: $brand-color;
+    fill: $brand-color;
+  }
+  
+  .modal_header {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 12px;
+    display: block;
+  }
+  .signup-form_item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .comment {
+    resize: none;
+    width: 458px;
+    height: 120px;
+    margin-top: 4px;
+    padding: 12px 16px;
+    border: 1px solid $border-box;
+    border-radius: 4px;
+    display: block;
+    transition-property: border;
+    transition: $transition-effect;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  .signup-form_button {
+    border: none;
+    background-color: $brand-color;
+    color: $white;
+    padding: 10px 76px;
+    cursor: pointer;
+    display: flex;
+    margin: 0 auto;
+    box-shadow: 0px 4px 4px $button-shadow;
+    border-radius: 4px;
+  }
+  .signup-form_label {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  
+  .signup-form_checkbox {
+    margin-left: -16px;
+    display: flex;
+    visibility: hidden;
+  }
+  .signup-form_box {
+    cursor: pointer;
+  }
+  .signup-form_check-white {
+    visibility: hidden;
+    transform: translateX(-100%);
+    cursor: pointer;
+    transition: $transition-effect;
+  }
+  
+  .signup-form_checkbox:checked ~ .signup-form_check-white {
+    visibility: visible;
+    background-color: $brand-color;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    visibility: visible;
+  }
+  .signup-form_policy {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .signup-form_policy-doc {
+    color: $brand-color;
+  }
+  

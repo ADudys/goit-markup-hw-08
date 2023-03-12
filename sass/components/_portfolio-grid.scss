@@ -1,0 +1,29 @@
+.portfolio {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .portfolio-item {
+    border: 1px solid $portfolio-border;
+    &:hover,
+    &:focus {
+      box-shadow: 1px 4px 6px 0px $portfolio-box-shadow1;
+      box-shadow: 0px 4px 4px 0px $portfolio-box-shadow2;
+      box-shadow: 0px 1px 1px 0px $portfolio-box-shadow3;
+      transition: $transition-effect;
+    }
+  }
+  .portfolio_label {
+    font-size: 18px;
+    line-height: 2;
+    margin: 20px 0 4px 20px;
+  }
+  .portfolio_description {
+    font-size: 16px;
+    line-height: 1.87;
+    margin: 0 0 0 24px;
+    padding-bottom: 20px;
+  }
+  .portfolio_image {
+    position: relative;
+    overflow: hidden;
+  }
