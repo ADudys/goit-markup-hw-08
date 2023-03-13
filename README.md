@@ -1,2 +1,2 @@
 # WebStudio website
-Simple website created with HTML, CSS and JS
+Simple website created with HTML, SCSS and JS
