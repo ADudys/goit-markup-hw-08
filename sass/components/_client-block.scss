@@ -12,7 +12,7 @@
   &:focus {
     border-color: $brand-color;
     transition: $transition-effect;
-    &:first-child {
+    &:nth-child(n) {
       fill: $brand-color;
       border-color: $brand-color;
       transition: $transition-effect;
