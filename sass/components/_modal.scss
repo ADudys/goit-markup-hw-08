@@ -90,7 +90,7 @@
   &:focus {
     outline: none;
     border-color: $brand-color;
-    & ~ .form-icon {
+    & + .form-icon {
       fill: $brand-color;
     }
   }
@@ -153,7 +153,7 @@
   margin-left: -16px;
   display: flex;
   visibility: hidden;
-  &:checked ~ .signup-form_check-white {
+  &:checked + .signup-form_check-white {
     visibility: visible;
     background-color: $brand-color;
     border-radius: 2px;
