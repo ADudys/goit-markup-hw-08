@@ -1,8 +1,6 @@
 .team {
     background-color: $team-block;
-  }
-
-.team_item {
+&_item {
     background-color: $white;
     text-align: center;
     font-size: 16px;
@@ -12,14 +10,13 @@
     box-shadow: 0px 1px 3px $shadow-color1, 0px 1px 1px $shadow-color2,
       0px 2px 1px $shadow-color3;
     border-radius: 0px 0px 4px 4px;
-  }
+  }}
   .social-links {
     gap: 10px;
     justify-content: center;
     display: flex;
     margin: 16px 0 18px 0;
-  }
-  .social-links_icon-list {
+&_icon-list {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
@@ -28,7 +25,6 @@
     height: 44px;
     border-radius: 50%;
     fill: $icon-color;
-    cursor: pointer;
     &:hover,
     &:focus {
       fill: $white;
@@ -40,4 +36,5 @@
         transition: $transition-effect;
       }
     }
+  }
   }

@@ -1,8 +1,7 @@
 .portfolio {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .portfolio-item {
+  flex-wrap: wrap;
+  justify-content: center;
+  &__item {
     border: 1px solid $portfolio-border;
     &:hover,
     &:focus {
@@ -12,18 +11,37 @@
       transition: $transition-effect;
     }
   }
-  .portfolio_label {
+  &__label {
     font-size: 18px;
     line-height: 2;
     margin: 20px 0 4px 20px;
   }
-  .portfolio_description {
+  &__description {
     font-size: 16px;
     line-height: 1.87;
     margin: 0 0 0 24px;
     padding-bottom: 20px;
   }
-  .portfolio_image {
+  &__image {
     position: relative;
     overflow: hidden;
   }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $brand-color;
+    color: $white;
+    transform: translateY(200%);
+    transition: transform 250ms ease;
+    font-size: 18px;
+    line-height: 1.55;
+    padding: 49px 45px 49px 24px;
+    .portfolio__item:hover & {
+      transform: translateY(0);
+      transition: $transition-effect;
+    }
+  }
+}

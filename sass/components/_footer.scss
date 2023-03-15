@@ -1,41 +1,35 @@
-footer {
+.footer {
   background-color: $navy-block;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-.footer {
-  display: flex;
-  flex-direction: row;
-  gap: 70px;
-  align-items: baseline;
-}
-.footer_logo {
-  margin-top: 60px;
-  padding-right: 0;
-  color: $white;
-}
-.address {
-  padding-top: 20px;
-  font-size: 14px;
-  line-height: 1.71;
-  color: $white;
-}
-.footer-contact {
-  color: $address;
-  text-decoration: none;
-  &:hover,
-  &:focus {
-    color: $brand-color;
-    transition: $transition-effect;
+  &__container {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    align-items: baseline;
+    justify-content: space-around;
   }
-}
-.footer_social {
-    gap: 10px;
+  &__logo {
+    margin-top: 60px;
+    padding-right: 0;
+    color: $white;
+  }
+  &__contact {
+    color: $address;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      color: $brand-color;
+      transition: $transition-effect;
+    }
+  }
+  &__social {
     justify-content: center;
     display: flex;
+    justify-content: space-between;
     margin-top: 20px;
   }
-  .footer_icon {
+  &__icon {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
@@ -45,26 +39,43 @@ footer {
     border-radius: 50%;
     background-color: $footer-icon;
     fill: $white;
-    cursor: pointer;
     &:hover,
     &:focus {
       background-color: $brand-color;
       transition: $transition-effect;
     }
   }
-  .newsletter {
-    display: inline-flex;
+
+  &__address {
+    padding-top: 20px;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $white;
+    width: 246px;
   }
-  .newsletter_input {
+  &__header {
+    color: $white;
+    font-size: 14px;
+    line-height: 1.17;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+}
+
+.newsletter {
+  display: inline-flex;
+  gap: calc(12px);
+  margin-top: 20px;
+  &_input {
     border: 1px solid $input-border;
     background-color: $navy-block;
     padding-left: 16px;
     height: 50px;
-    width: 358px;
+    width: 340px;
     color: white;
   }
-  
-  .newsletter_button {
+
+  &_button {
     border: none;
     background-color: $brand-color;
     color: $white;
@@ -74,8 +85,9 @@ footer {
     display: flex;
     justify-content: center;
   }
-  .newsletter_icon {
+  &_icon {
     border: none;
     fill: $white;
     margin-left: 24px;
   }
+}

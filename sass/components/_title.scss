@@ -7,15 +7,7 @@
     text-align: center;
     padding-top: 182px;
     padding-bottom: 182px;
-  }
-  h1 {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    margin-bottom: 30px;
-    color: $white;
-  }
-  .title_button {
+  &_button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -24,4 +16,11 @@
     background: $brand-color;
     color: $white;
     border: none;
+  }}
+  h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    margin-bottom: 30px;
+    color: $white;
   }

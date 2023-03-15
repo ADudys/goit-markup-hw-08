@@ -1,14 +1,12 @@
 .services {
     display: flex;
     flex-direction: column;
-  }
-  .services_item {
+&_item {
     position: relative;
     overflow: hidden;
     display: flex;
     justify-content: center;
-  }
-  .services_item > .services_label {
+ & > .services_label {
     background: rgba(47, 48, 58, 0.8);
     position: absolute;
     bottom: 0;
@@ -20,4 +18,4 @@
     font-weight: 700;
     line-height: 1.17;
     text-align: center;
-  }
+  }}}
