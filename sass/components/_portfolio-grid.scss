@@ -1,6 +1,10 @@
 .portfolio {
   flex-wrap: wrap;
   justify-content: left;
+  &__img {
+    width: 354px;
+    height: 294px;
+  }
   &__item {
     border: 1px solid $portfolio-border;
     width: 354px;
@@ -46,5 +50,17 @@
       transform: translateY(0);
       transition: $transition-effect;
     }
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio__img {
+    width: 354px;
+    height: 440px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__img {
+    width: 370px;
+    height: 404px;
   }
 }

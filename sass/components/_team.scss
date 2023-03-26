@@ -15,6 +15,10 @@
       0px 2px 1px $shadow-color3;
     border-radius: 0px 0px 4px 4px;
   }
+  &_image {
+    height: 460px;
+    width: 450px;
+  }
 }
 .social-links {
   gap: 10px;
@@ -51,5 +55,15 @@
       flex-wrap: wrap;
       gap: 30px;
     }
+    &_image {
+      width: 354px;
+      height: 374px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team_image {
+    height: 271px;
+    width: 260px;
   }
 }
