@@ -1,8 +1,11 @@
 .portfolio {
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   &__item {
     border: 1px solid $portfolio-border;
+    width: 354px;
+    height: 440px;
+
     &:hover,
     &:focus {
       box-shadow: 1px 4px 6px 0px $portfolio-box-shadow1;

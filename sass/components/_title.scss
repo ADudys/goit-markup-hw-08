@@ -1,12 +1,12 @@
 .title {
-    background-image: linear-gradient(315deg, $base-color 0%, $overlay-color 40%),
-      url(/goit-markup-hw-05/images/background.jpg);
-    background-size: 1600px;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    text-align: center;
-    padding-top: 182px;
-    padding-bottom: 182px;
+  background-image: linear-gradient(315deg, $base-color 0%, $overlay-color 40%),
+    url(/goit-markup-hw-05/images/background.jpg);
+  background-size: 480px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 182px;
+  padding-bottom: 182px;
   &_button {
     font-weight: 700;
     font-size: 16px;
@@ -16,11 +16,27 @@
     background: $brand-color;
     color: $white;
     border: none;
-  }}
-  h1 {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    margin-bottom: 30px;
-    color: $white;
   }
+}
+h1 {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.36;
+  margin-bottom: 30px;
+  color: $white;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    background-size: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    background-size: 1600px;
+  }
+  h1 {
+    font-size: 44px;
+  }
+}

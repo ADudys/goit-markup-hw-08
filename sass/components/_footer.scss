@@ -4,17 +4,21 @@
   padding-bottom: 60px;
   &__container {
     display: flex;
-    flex-direction: row;
-    gap: 70px;
-    align-items: baseline;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: center;
+    width: 480px;
   }
   &__logo {
-    margin-top: 60px;
+    display: flex;
+    justify-content: center;
     padding-right: 0;
     color: $white;
   }
   &__contact {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
     color: $address;
     text-decoration: none;
     &:hover,
@@ -26,8 +30,9 @@
   &__social {
     justify-content: center;
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
     margin-top: 20px;
+    width: 480px;
   }
   &__icon {
     justify-content: center;
@@ -47,7 +52,7 @@
   }
 
   &__address {
-    padding-top: 20px;
+    margin: 20px auto;
     font-size: 14px;
     line-height: 1.71;
     color: $white;
@@ -59,20 +64,24 @@
     line-height: 1.17;
     font-weight: 700;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
   }
 }
 
 .newsletter {
-  display: inline-flex;
   gap: calc(12px);
   margin-top: 20px;
+
   &_input {
     border: 1px solid $input-border;
     background-color: $navy-block;
     padding-left: 16px;
     height: 50px;
-    width: 340px;
+    width: 440px;
     color: white;
+    margin: 0 auto;
+    display: flex;
   }
 
   &_button {
@@ -84,10 +93,51 @@
     align-items: center;
     display: flex;
     justify-content: center;
+    margin: 20px auto;
   }
   &_icon {
     border: none;
     fill: $white;
     margin-left: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    &__container {
+      flex-direction: row;
+      gap: 50px;
+      flex-wrap: wrap;
+
+      section {
+        width: max-content;
+      }
+    }
+    &__social {
+      width: max-content;
+    }
+  }
+
+  .newsletter {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    &_input {
+      width: 450px;
+      margin: 0 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    &__container {
+      flex-direction: row;
+    }
+  }
+  .newsletter {
+    margin-top: 0;
+    &_input {
+      width: 340px;
+    }
   }
 }

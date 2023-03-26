@@ -1,6 +1,10 @@
 .team {
-    background-color: $team-block;
-&_item {
+  background-color: $team-block;
+  &__list {
+    flex-direction: column;
+    display: flex;
+  }
+  &_item {
     background-color: $white;
     text-align: center;
     font-size: 16px;
@@ -10,13 +14,14 @@
     box-shadow: 0px 1px 3px $shadow-color1, 0px 1px 1px $shadow-color2,
       0px 2px 1px $shadow-color3;
     border-radius: 0px 0px 4px 4px;
-  }}
-  .social-links {
-    gap: 10px;
-    justify-content: center;
-    display: flex;
-    margin: 16px 0 18px 0;
-&_icon-list {
+  }
+}
+.social-links {
+  gap: 10px;
+  justify-content: center;
+  display: flex;
+  margin: 16px 0 18px 0;
+  &_icon-list {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
@@ -37,4 +42,14 @@
       }
     }
   }
+}
+@media screen and (min-width: 768px) {
+  .team {
+    &__list {
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
   }
+}

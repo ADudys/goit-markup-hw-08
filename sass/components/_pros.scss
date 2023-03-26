@@ -1,7 +1,48 @@
 .pros {
+  font-size: 14px;
+  line-height: 1.71;
+  &_icon {
+    background-color: $team-block;
+    padding: 25px 190px;
+    width: 450px;
+    height: 120px;
+  }
+  &__header {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .pros {
+    flex-direction: row;
+    flex-wrap: wrap;
+    &_icon {
+      background-color: $team-block;
+      padding: 25px 142px;
+      width: 354px;
+    }
+    &_item {
+      width: 354px;
+    }
+    &__header {
+      justify-content: left;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .pros {
     font-size: 14px;
     line-height: 1.71;
- &_icon {
-    background-color: $team-block;
-    padding: 25px 100px;
-  }}
+    &_icon {
+      background-color: $team-block;
+      padding: 25px 100px;
+      width: 270px;
+      height: 120px;
+    }
+    &_item {
+      width: 270px;
+    }
+  }
+}

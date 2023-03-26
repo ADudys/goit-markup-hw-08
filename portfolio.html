@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
   <head>
+    
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,6 +29,25 @@
         <a class="logo page-header_logo" href="./index.html"
           ><span class="logo_web">Web</span>Studio</a
         >
+        <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false" 
+        aria-controls="mobile-menu"
+      >
+        <svg
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
         <nav class="nav">
           <ul class="nav_list">
             <li>
@@ -39,13 +59,14 @@
             <li><a class="nav_element" href="#">Kontakt</a></li>
           </ul>
         </nav>
-        <a class="contact mail" href="mailto:info@devstudio.com">
+        <div class="contact">
+        <a class="contact_element mail" href="mailto:info@devstudio.com">
           <svg class="contact_icon" width="16px" height="12px">
             <use href="./images/icons.svg#icon-envelope"></use>
           </svg>
           info@devstudio.com</a
         >
-        <a class="contact" href="tel:+48111111111">
+        <a class="contact_element" href="tel:+48111111111">
           <svg class="contact_icon" height="16px" width="10px">
             <use href="./images/icons.svg#icon-smartphone"></use>
           </svg>
@@ -256,5 +277,58 @@
         </section>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <nav class="menu_nav">
+        <ul class="menu_list">
+          <li>
+            <a class="menu_element" href="./index.html">Agencja</a>
+          </li>
+          <li>
+            <a class="menu_element" href="./portfolio.html">Porfolio</a>
+          </li>
+          <li><a class="menu_element" href="#">Kontakt</a></li>
+        </ul>
+      </nav>      
+      <div class="menu_contact"><a class="menu_phone" href="tel:+48111111111">
+        +48 111 111 111</a
+      >
+      <a class="menu_mail" href="mailto:info@devstudio.com">
+        info@devstudio.com</a
+      >
+</div>
+      <div class="menu_social">
+        <a class="menu_link" href="#">Instagram</a>
+         | 
+         <a class="menu_link" href="#">Twitter</a>
+          | 
+          <a class="menu_link" href="#"> Facebook</a>
+           | <a class="menu_link" href="#">Linkedin</a>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

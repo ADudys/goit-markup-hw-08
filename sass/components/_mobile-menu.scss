@@ -1,0 +1,105 @@
+.menu {
+  &-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: $white;
+    z-index: 999;
+    padding-top: 48px;
+    padding-left: 40px;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+    &.is-open {
+      transform: translateX(0);
+    }
+  }
+  &-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+  }
+  &_nav {
+    font-size: 40px;
+    line-height: 1.17;
+    font-weight: 500;
+  }
+  &_list {
+    flex-direction: column;
+  }
+  &_element {
+    text-decoration: none;
+    color: $base-color;
+    &:hover {
+      text-decoration: none;
+      color: $brand-color;
+    }
+  }
+  &-container,
+  &-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: $base-color;
+    &:hover,
+    &:focus {
+      color: $brand-color;
+    }
+  }
+  &_contact {
+    margin-top: 270px;
+    display: flex;
+    flex-direction: column;
+  }
+  &_phone {
+    color: $brand-color;
+    text-decoration: none;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 1.17;
+    margin-bottom: 32px;
+  }
+  &_mail {
+    text-decoration: none;
+    color: $lighter-font;
+    font-weight: 500px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  &_social {
+    margin-top: 36px;
+    display: flex;
+    gap: 10px;
+  }
+  &_link {
+    text-decoration: none;
+    color: $brand-color;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu {
+    display: none;
+
+    &-toggle {
+      display: none;
+    }
+    &-container {
+      display: none;
+    }
+  }
+}
