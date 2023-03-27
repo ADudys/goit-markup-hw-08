@@ -12,8 +12,9 @@
   left: 50%;
   translate: -50% -50%;
   opacity: 1;
-  width: 528px;
-  height: 581px;
+  width: 90%;
+  max-width: 528px;
+  height: 609px;
   background-color: $white;
   display: flex;
   flex-direction: column;
@@ -40,6 +41,8 @@
     margin-top: 0;
     margin-bottom: 12px;
     display: block;
+    line-height: 1.5;
+    width: 80%;
   }
 }
 .is-hidden {
@@ -97,6 +100,7 @@
     font-size: 14px;
     text-align: center;
     margin: 10px 0;
+    margin-right: 40px;
   }
   &_policy-doc {
     color: $brand-color;
@@ -117,7 +121,7 @@
     color: $lighter-font;
     font-size: 12px;
     line-height: 1.17;
-    width: 448px;
+    width: 90%;
     height: 40px;
     padding-left: 42px;
     margin-top: 4px;
@@ -137,22 +141,29 @@
       }
     }
   }
-&_comment {
-  resize: none;
-  width: 458px;
-  height: 120px;
-  margin-top: 4px;
-  padding: 12px 16px;
-  border: 1px solid $border-box;
-  border-radius: 4px;
-  display: block;
-  transition-property: border;
-  transition: $transition-effect;
-  font-size: 12px;
-  line-height: 1.17;
-  &:focus {
-    outline: none;
-    border-color: $brand-color;
-    fill: $brand-color;
+  &_comment {
+    resize: none;
+    width: 90%;
+    height: 120px;
+    margin-top: 4px;
+    padding: 12px 16px;
+    border: 1px solid $border-box;
+    border-radius: 4px;
+    display: block;
+    transition-property: border;
+    transition: $transition-effect;
+    font-size: 12px;
+    line-height: 1.17;
+    &:focus {
+      outline: none;
+      border-color: $brand-color;
+      fill: $brand-color;
+    }
   }
-}}
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 528px;
+  }
+}
