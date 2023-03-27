@@ -130,14 +130,29 @@
 
 @media screen and (min-width: 1200px) {
   .footer {
+    &__logo {
+      justify-content: left;
+    }
     &__container {
       flex-direction: row;
+      gap: 70px;
     }
-  }
-  .newsletter {
-    margin-top: 0;
-    &_input {
-      width: 340px;
+    &__header {
+      justify-content: left;
+    }
+    &__contact {
+      display: flex;
+      justify-content: left;
+    }
+    .newsletter {
+      margin-top: 0;
+      flex-direction: row;
+      &_input {
+        width: 340px;
+      }
+      &_button {
+        margin: 0;
+      }
     }
   }
 }
